@@ -1,0 +1,129 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --body-background: hsl(217, 54%, 11%);
+  --card-background: hsl(216, 50%, 16%);
+  --text-color: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.125em;
+  text-align: left;
+  background-color: var(--body-background);
+  color: var(--white);
+}
+
+img.cube-image {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+hr {
+  border-top: 1px;
+  border-color: var(--soft-blue);
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+/* Container */
+.container {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: var(--card-background);
+  filter: drop-shadow(0 0 60px hsl(217, 54%, 5%));
+}
+
+.container-text, {
+  color: var(--soft-blue)
+}
+
+.days-left {
+  margin-left: auto;
+  color: var(--soft-blue);
+}
+
+.info-text {
+  display: flex;
+  font-size: 16px;
+}
+
+.eth-amount {
+  color: var(--cyan)
+}
+
+/* Icons */
+.eth-icon, .clock-icon {
+  margin-right: 0.5em;
+}
+
+.view-icon {
+  width: 50px;
+  height: 50px;
+  padding: 125px;
+  position: absolute;
+  margin: auto;
+  border-radius: 10px;
+  left: 7%;
+  background-color: var(--cyan);
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+/* Card Footer */
+.creators-info {
+  color: var(--soft-blue);
+}
+
+.creators-avatar {
+  float: left;
+  margin-right: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px;
+  border-style: solid;
+  border-color: var(--white);
+}
+
+.creators-name {
+  color: var(--white);
+}
+
+.creators-info, .creators-name {
+  font-size: 16px;
+}
+
+/* Hover Elements */
+.card-heading:hover, .creators-name:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.view-icon:hover {
+  opacity: 0.5;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
